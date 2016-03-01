@@ -1,0 +1,23 @@
+<h1>Home#test</h1>
+<p>Find me in app/views/home/test.html.erb</p>
+
+<div class="row">
+      <div class="weather-card col s12 m8 l4">
+        <div class="card">
+          <div class="card-content">
+            <h4 class="cyan-text text-lighten-1">Forecast for Dallas:</h4>
+            
+            <span class="card-title"><%= @temp_f %>°F</span>
+            <p>Feels like: <%= @real_feel %>°F</p>
+            <p><%= image_tag @weather_icon %></p>
+            <p><%= @weather_words %></p>
+            
+            
+          </div>
+          <div class="card-action center-align">
+              &nbsp;&nbsp;&nbsp;&nbsp;
+           <%= link_to"Full Forecast", @forecast_link, target: "_blank" %>
+          </div>
+        </div>
+      </div>
+    </div>

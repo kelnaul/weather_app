@@ -1,0 +1,30 @@
+
+<div class="row">
+   <div class="card for_form z-depth-2">
+       <div class="card-content">
+           <div class="row">
+             <h3>Look up your local forecast</h3>
+             <p><em>What's the weather like in your city?</em></p>
+             <%= form_tag root_path do %>
+             <div class="col s12">
+               <div class="row">
+                 <div class="input-field col s6">
+                   <%= text_field_tag :city, nil %><br>
+                   <%= label_tag(:city, "City Name") %>
+                 </div>
+                 <p>
+                 </p>
+                 <div class="input-field col s6">
+                   <%= select_tag :state, options_for_select(@states), :prompt => "Select a State" %><br>
+                 </div>
+                 <div>
+                   <%= button_tag(type: 'submit', class: 'btn') do %>
+                     <i class="material-icons">search</i>
+                   <% end %>
+                 </div>
+               </div>
+             </div>
+             <% end %>
+       </div>
+   </div>
+</div>

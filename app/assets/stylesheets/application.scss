@@ -1,0 +1,52 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+@import "materialize/components/color";
+$primary-color: color("blue", "lighten-2") !default;
+@import 'materialize';
+
+
+.for_form {
+    text-align:center;
+    width:675px;
+    margin-left: auto ;
+    margin-right: auto ;  
+    margin-top: 10px;
+    opacity:.6;
+    font-family: 'Pathway Gothic One', sans-serif;
+    
+    
+}
+
+.weather-card {
+    text-align:center;
+    width:475px;
+    margin-left: auto ;
+    margin-right: auto ;
+    opacity:.6;
+    font-family: 'Pathway Gothic One', sans-serif;
+}
+
+p {
+    font-size: 1.5em;
+}
+
+h3 {
+    font-size: 4.2em;
+}
+
+h5 {
+    font-size: 2.5em;
+}
